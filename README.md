@@ -1,48 +1,33 @@
-# FraudShield AI
+# FraudShield AI — Intelligent Fraud Detection System
 
-An educational AI-based transaction fraud-risk detection
-prototype using Random Forest and Isolation Forest.
+## Overview
+FraudShield AI is a machine-learning project that analyses credit-card transaction data and identifies transactions that may require fraud review.
 
-## Features
-
-- Supervised fraud classification
-- Unsupervised anomaly detection
-- Interactive Streamlit dashboard
-- Precision, recall, F1-score and PR-AUC
-- Confusion matrix
-- CSV risk report export
-
-## Requirements
-
+## Technologies Used
 - Python
 - Streamlit
-- Pandas
-- NumPy
+- Pandas and NumPy
 - Scikit-learn
-- Matplotlib
+- Random Forest Classifier
+- Isolation Forest Anomaly Detection
 
-## Local Setup
+## Key Features
+- Dark-themed dashboard with red and green risk indicators
+- Dataset upload and validation
+- Model training and evaluation
+- Precision, recall, F1-score, PR-AUC and confusion matrix
+- Transaction risk scoring
+- Anomaly detection
+- CSV prediction report download
 
+## Live Demo
+https://fraudshieldai-irfg6kwoocafob8olzmdky.streamlit.app/
+
+## Run Locally
 1. Install Python.
-2. Open the project folder in VS Code.
-3. Create and activate a virtual environment.
-4. Install dependencies:
-
-   python -m pip install -r requirements.txt
-
-5. Place the permitted public dataset at:
-
-   data/creditcard.csv
-
-6. Start the app:
-
-   python -m streamlit run app.py
+2. Install dependencies using `pip install -r requirements.txt`.
+3. Place the labelled dataset at `data/creditcard.csv`.
+4. Run `python -m streamlit run app.py`.
 
 ## Limitations
-
-This project is an educational prototype.
-A risk score is not proof of fraud. Do not use it alone
-to block payments or make financial decisions.
-
-Public deployment requires privacy protection, security
-testing, independent model validation and human review.
+This is an educational prototype. Model predictions are not proof of fraud, and the system should not be used alone to make real payment decisions.
