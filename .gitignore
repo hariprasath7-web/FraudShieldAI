@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+data/
+*.joblib
+*.pkl
+.env
+test_transactions.csv
